@@ -14,6 +14,13 @@
         .font-lato {
             font-family: 'Lato', sans-serif;
         }
+        nav input[type=text]{
+            background-image: url("./icon/nav/Frame.svg");
+            background-repeat: no-repeat;
+            background-position: right center;
+            
+            
+        }
     </style>
 </head>
 
@@ -46,6 +53,55 @@
             </div>
         </nav> -->
 
+        <nav class="mt-5">
+            <!-- daisy ui nav -->
+
+            <!-- menu -->
+            <div class="navbar text-black md:bg-[#F85559] rounded-full items-center flex-1 ">
+                <div class="navbar-center p-4 flex-1 flex-nowrap hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-white text-lg font-medium">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="flex-1 p-4">
+                    <a class="">
+                        <div class="flex justify-center items-center gap-2">
+                            <img src="./images/logo.png" alt="" class="">
+                            <h4 class="text-right text-4xl font-bold md:text-white">Fruit Burst</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="  md:flex navbar-center hidden">
+                    <input type="text" placeholder="Search" class=" rounded-full w-24 px-5 py-4 mr-4 md:w-80 md:h-10" />
+                </div>
+                <nav class="flex items-center lg:hidden">
+                    <div class="navbar-end">
+                        <div class="dropdown ">
+                            <button class="hamburger-btn px-2 py-4">
+                                <span class="block h-1 w-6 rounded bg-black"></span>
+                                <span class="block h-1 w-6 rounded bg-black mt-1"></span>
+                                <span class="block h-1 w-6 rounded bg-black mt-1"></span>
+                            </button>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content right-0  top-16 mt-3 z-[1] p-2 shadow bg-base-100">
+                                <li><a>Home</a></li>
+                                <li><a>Shop</a></li>
+                                <li><a>About Us</a></li>
+                                <li><a>All Fruits</a></li>
+                                <li><a href="">
+                                        <input type="text" placeholder="Search"
+                                            class="md:hidden rounded-full w-24 px-5 py-4  mr-4 md:w-80 md:h-10" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+
         <!-- banner -->
 
         <section class="relative">
@@ -61,7 +117,7 @@
                 </div>
               </div> -->
             <!-- banner -->
-            <div class="carousel w-full mt-14 rounded-lg  z-10">
+            <div class="carousel w-full mt-14 rounded-lg z-10">
                 <!-- slider1 -->
                 <div id="slide1" class="carousel-item relative w-full">
                     <div class="hero md:h-[600px]" style="background-image: url(./images/banner1.png);">
@@ -180,7 +236,7 @@
             <!-- title and countdown -->
 
             <div class="flex flex-col gap-6 md:flex-row justify-center items-center mb-12">
-                <div class="flex-1">
+                <div class="flex-1 text-center md:text-left">
                     <h3 class="text-5xl text-[#121212] mb-6">Deal of the day</h3>
                     <p class="max-w-xl text-[#12121299]">Contrary to popular belief, is not simply random text. It has
                         roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -221,7 +277,7 @@
 
             <!-- deal cards container -->
 
-            <div class="grid md:grid-cols-4 grid-cols-1 gap-2 ">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2 ">
                 <!-- card1 -->
                 <div
                     class="card bg-base-100 rounded-lg border-solid border-2 border-[#1212121a] py-12 px-12 text-center">
@@ -528,7 +584,9 @@
                 </div>
             </div>
         </section>
+
         <!-- choose us section -->
+
         <section class="px-5 max-w-7xl mx-auto my-32">
             <h3 class="text-center text-5xl text-[#121212] font-extrabold mb-6">Why Choose Us</h3>
             <p class="text-[#12121299] max-w-[600px] mx-auto text-center mb-12">Contrary to popular belief, is not
@@ -539,72 +597,75 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                 <!-- left -->
                 <div class="space-y-6">
-                    <div class="flex justify-start items-center gap-3 ">
-                        <div class="bg-[#1212121a] rounded-full border-solid border-8 border-[#1212121a] ">
-                            <img src="./images/why choose us icon/group 1.svg" alt="">
+                    <div class="flex justify-center flex-col md:flex-row  items-center gap-3 ">
+                        <div class=" rounded-full border-solid border-8 border-[#1212121a] ">
+                            <img src="./images/why choose us icon/group 1.svg" alt=""class="bg-[#1212121a] rounded-full">
                         </div>
-                        <div class="space-y-2">
+                        <div class="space-y-2 text-center md:text-left">
                             <h3 class="text-[ #121212] text-2xl font-extrabold ">Dedicated Team</h3>
-                            <hr class="w-24 ">
+                            <hr class="w-24 mx-auto md:mx-0">
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
-                    <div class="flex justify-start items-center gap-3">
-                        <div class="bg-[#1212121a] rounded-full border-solid border-8 border-[#1212121a] ">
-                            <img src="./images/why choose us icon/love 1.svg" alt="">
+                    <div class="flex justify-start flex-col md:flex-row  items-center gap-3">
+                        <div class="rounded-full border-solid border-8 border-[#1212121a] ">
+                            <img src="./images/why choose us icon/love 1.svg" alt=""class="bg-[#1212121a] rounded-full">
                         </div>
-                        <div class="space-y-2">
+                        <div class="space-y-2 text-center md:text-left">
                             <h3 class="text-[ #121212] text-2xl font-extrabold ">Dedicated Team</h3>
-                            <hr class="w-24 ">
+                            <hr class="w-24 mx-auto md:mx-0">
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
-                    <div class="flex justify-start items-center gap-3">
-                        <div class="bg-[#1212121a] rounded-full border-solid border-8 border-[#1212121a] ">
-                            <img src="./images/why choose us icon/gift-box 1.svg" alt="">
+                    <div class="flex justify-start flex-col md:flex-row  items-center gap-3">
+                        <div class="rounded-full border-solid border-8 border-[#1212121a] ">
+                            <img src="./images/why choose us icon/gift-box 1.svg" alt="" class="bg-[#1212121a] rounded-full">
                         </div>
-                        <div class="space-y-2">
+                        <div class="space-y-2 text-center md:text-left">
                             <h3 class="text-[ #121212] text-2xl font-extrabold">Dedicated Team</h3>
-                            <hr class="w-24 ">
+                            <hr class="w-24 mx-auto md:mx-0">
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
                 </div>
                 <!-- middle -->
                 <div>
-                    <img src="./images/whychoose1.png" alt="">
+                    <img src="./images/whychoose1.png" alt="" class="mx-auto">
                 </div>
                 <!-- right -->
                 <div class="space-y-6">
                     <div>
-                        <div class="flex justify- end items-center flex-row-reverse gap-3">
-                            <div class="bg-[#1212121a] rounded-full border-solid border-8 border-[#1212121a] ">
-                                <img src="./images/why choose us icon/fruit 1.svg" alt="">
+                        <div class="flex justify-end flex-col  items-center md:flex-row-reverse gap-3">
+                            <div class="rounded-full border-solid border-8 border-[#1212121a] ">
+                                <img src="./images/why choose us icon/fruit 1.svg" alt="" class="bg-[#1212121a] rounded-full">
                             </div>
-                            <div class="text-right space-y-2">
+                            <div class="md:text-right text-center space-y-2">
                                 <h3 class="text-[ #121212] text-2xl font-extrabold ">Dedicated Team</h3>
-                                <hr class="w-24">
-                                <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                <hr class="w-24 mx-auto md:mx-0">
+                                <p>Professional employees are there for you to pick the most amazing and fresh fruits.
+                                </p>
                             </div>
                         </div>
-                        <div class="flex justify- end items-center flex-row-reverse gap-3">
-                            <div class="bg-[#1212121a] rounded-full border-solid border-8 border-[#1212121a] ">
-                                <img src="./images/why choose us icon/ice-cream 1.svg" alt="">
+                        <div class="flex justify-end flex-col items-center md:flex-row-reverse gap-3">
+                            <div class="rounded-full border-solid border-8 border-[#1212121a] ">
+                                <img src="./images/why choose us icon/ice-cream 1.svg" alt="" class="bg-[#1212121a] rounded-full">
                             </div>
-                            <div class="text-right space-y-2">
+                            <div class="md:text-right text-center space-y-2">
                                 <h3 class="text-[ #121212] text-2xl font-extrabold ">Dedicated Team</h3>
-                                <hr class="w-24">
-                                <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                <hr class="w-24 mx-auto md:mx-0">
+                                <p>Professional employees are there for you to pick the most amazing and fresh fruits.
+                                </p>
                             </div>
                         </div>
-                        <div class="flex justify- end items-center flex-row-reverse gap-3">
-                            <div class="bg-[#1212121a] rounded-full border-solid border-8 border-[#1212121a] ">
-                                <img src="./images/why choose us icon/like 1.svg" alt="">
+                        <div class="flex justify-end flex-col items-center md:flex-row-reverse gap-3">
+                            <div class="rounded-full border-solid border-8 border-[#1212121a] ">
+                                <img src="./images/why choose us icon/like 1.svg" alt="" class="bg-[#1212121a] rounded-full">
                             </div>
-                            <div class="text-right space-y-2">
+                            <div class="md:text-right text-center space-y-2">
                                 <h3 class="text-[ #121212] text-2xl font-extrabold ">Dedicated Team</h3>
-                                <hr class="w-24 ">
-                                <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                <hr class="w-24 mx-auto md:mx-0">
+                                <p>Professional employees are there for you to pick the most amazing and fresh fruits.
+                                </p>
                             </div>
                         </div>
                     </div>
